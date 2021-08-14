@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Farmacias/static/css/main.a617e044.chunk.css",
+    "main.js": "/Farmacias/static/js/main.710a2634.chunk.js",
+    "main.js.map": "/Farmacias/static/js/main.710a2634.chunk.js.map",
+    "runtime-main.js": "/Farmacias/static/js/runtime-main.628b2029.js",
+    "runtime-main.js.map": "/Farmacias/static/js/runtime-main.628b2029.js.map",
+    "static/css/2.da1eef19.chunk.css": "/Farmacias/static/css/2.da1eef19.chunk.css",
+    "static/js/2.46e6795f.chunk.js": "/Farmacias/static/js/2.46e6795f.chunk.js",
+    "static/js/2.46e6795f.chunk.js.map": "/Farmacias/static/js/2.46e6795f.chunk.js.map",
+    "static/js/3.38cb3d02.chunk.js": "/Farmacias/static/js/3.38cb3d02.chunk.js",
+    "static/js/3.38cb3d02.chunk.js.map": "/Farmacias/static/js/3.38cb3d02.chunk.js.map",
+    "index.html": "/Farmacias/index.html",
+    "static/css/2.da1eef19.chunk.css.map": "/Farmacias/static/css/2.da1eef19.chunk.css.map",
+    "static/css/main.a617e044.chunk.css.map": "/Farmacias/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.46e6795f.chunk.js.LICENSE.txt": "/Farmacias/static/js/2.46e6795f.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/Farmacias/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.628b2029.js",
+    "static/css/2.da1eef19.chunk.css",
+    "static/js/2.46e6795f.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.710a2634.chunk.js"
+  ]
+}
