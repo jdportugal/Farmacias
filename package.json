@@ -1,4 +1,5 @@
 {
+  "homepage": "http://jdportugal.github.io/Farmacias",
   "name": "farmacias",
   "version": "0.1.0",
   "private": true,
@@ -8,12 +9,15 @@
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.0.2",
     "react": "^17.0.2",
+    "react-addons-shallow-compare": "^15.6.3",
     "react-bootstrap": "^2.0.0-beta.4",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

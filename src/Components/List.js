@@ -1,9 +1,10 @@
-import App from "../App"
-import FarmacyCard from "./FarmacyCard"
-import { Navbar } from 'react-bootstrap';
 
-function List() {
-    const data = {
+import FarmacyCard from "./FarmacyCard"
+import React, { useState } from 'react';
+
+function List(props) {
+    console.log(props.searchTerm)
+    const allData = {
         "Sintra": {
             "Populacao": 377835,
             "Num maximo de farmacias": 107.95285714285714,
@@ -29106,18 +29107,21 @@ function List() {
         }
     }
 
+    const [data, setData] = useState(allData);
     var placeList = []
-    //placeList.push(<FarmacyCard place={"ola"} data={data["Sintra"]}></FarmacyCard>)
-    for (let place in data) {
-        placeList.push(<FarmacyCard place={place} data={data[place]}></FarmacyCard>)
+    if (props.searchTerm == "") {
+        for (let place in data) {
+            placeList.push(<FarmacyCard key={place} place={place} data={data[place]}></FarmacyCard>)
+        }
+    } else {
+        placeList = []
+        if (props.searchTerm in allData) {
+            placeList.push(<FarmacyCard key={props.searchTerm} place={props.searchTerm} data={allData[props.searchTerm]}></FarmacyCard>)
+        }
     }
+
     return (
         <div>
-            <Navbar bg="dark" variant="dark">
-                <Navbar.Brand href="#home">
-                    Municípios com mais Cap. Livre
-                </Navbar.Brand>
-            </Navbar >
             {placeList}
         </div >
     );

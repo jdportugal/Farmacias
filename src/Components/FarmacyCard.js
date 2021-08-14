@@ -1,7 +1,9 @@
 import { Card, ListGroup, Accordion } from 'react-bootstrap';
+import React from "react";
+import shallowCompare from 'react-addons-shallow-compare';
 
 function FarmacyCard(props) {
-    console.log(props.data)
+    console.log("≤reloading")
     var vizinhos = []
     for (let vizinho in props.data["Vizinhos"]) {
         var farmacias = []
@@ -53,4 +55,5 @@ function FarmacyCard(props) {
         </div>
     )
 }
-export default FarmacyCard;
+
+export default React.memo(FarmacyCard);
